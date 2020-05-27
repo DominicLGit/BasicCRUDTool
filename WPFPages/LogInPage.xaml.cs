@@ -11,7 +11,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace BasicCRUDTool
+namespace BasicCRUDTool.WPFPages
 {
     /// <summary>
     /// Interaction logic for LogInPage.xaml
