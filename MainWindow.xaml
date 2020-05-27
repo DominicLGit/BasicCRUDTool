@@ -130,6 +130,9 @@
     </WindowChrome.WindowChrome>
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="{Binding NavigationHeightGridLength, FallbackValue=20}"/>
+        </Grid.RowDefinitions>
     </Grid>
 
 </Window>
