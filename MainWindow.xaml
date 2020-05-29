@@ -68,7 +68,7 @@
                                         </Button>
                                         
                                         <!--TitleString-->
-                                        <Viewbox Grid.Column="1" Margin="0">
+                                        <Viewbox Grid.Column="0" Grid.ColumnSpan="3" Margin="0">
                                             <TextBlock Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Title}"
                                                        Style="{StaticResource HeaderText}"/>
                                         </Viewbox>
@@ -84,6 +84,8 @@
                                             <Button Style="{StaticResource WindowControlButton}" Command="{Binding CloseCommand}">
                                                 <Image Source="/Resources/Images/icons8-close-window-32.png" />
                                             </Button>
+                                            <Border Width="6">
+                                            </Border>
                                         </StackPanel>
                                     </Grid>
 
