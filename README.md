@@ -1,5 +1,5 @@
-[https://ci.appveyor.com/api/projects/DominicLGit/basiccrudtool?svg=true](https://ci.appveyor.com/api/projects/DominicLGit/basiccrudtool?svg=true)
 
+<img src="https://ci.appveyor.com/api/projects/DominicLGit/basiccrudtool?svg=true" alt="Project Badge" width="300">
 
 
 # BasicCRUDTool
