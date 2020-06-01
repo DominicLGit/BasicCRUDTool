@@ -1,2 +1,5 @@
 build:
   project: BasicCRUDTool.sln
+
+before_build:
+  - nuget restore
