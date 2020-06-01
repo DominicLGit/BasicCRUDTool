@@ -2,11 +2,17 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:BasicCRUDTool">
 
-    <Color x:Key="BackgroundLight">#efefef</Color>
+    <Color x:Key="BackgroundLight">#fafafa</Color>
     <SolidColorBrush x:Key="BackgroundLightBrush" Color="{StaticResource BackgroundLight}" />
 
-    <Color x:Key="BackgroundVeryLight">#fafafa</Color>
+    <Color x:Key="BackgroundVeryLight">#ffffff</Color>
     <SolidColorBrush x:Key="BackgroundVeryLightBrush" Color="{StaticResource BackgroundVeryLight}" />
+
+    <Color x:Key="BackgroundDark">#686868</Color>
+    <SolidColorBrush x:Key="BackgroundDarkBrush" Color="{StaticResource BackgroundDark}" />
+
+    <Color x:Key="BackgroundVeryDark">#000000</Color>
+    <SolidColorBrush x:Key="BackgroundVeryDarkBrush" Color="{StaticResource BackgroundVeryDark}" />
 
     <Color x:Key="ForegroundMain">#686868</Color>
     <SolidColorBrush x:Key="ForegroundMainBrush" Color="{StaticResource ForegroundMain}" />
@@ -16,4 +22,7 @@
 
     <Color x:Key="ForgroundVeryDark">#000000</Color>
     <SolidColorBrush x:Key="ForgroundVeryDarkBrush" Color="{StaticResource ForgroundVeryDark}" />
+
+    <Color x:Key="ButtonOrange">#ff8929</Color>
+    <SolidColorBrush x:Key="ButtonOrangeBrush" Color="{StaticResource ButtonOrange}" />
 </ResourceDictionary>

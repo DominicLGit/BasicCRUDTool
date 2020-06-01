@@ -8,7 +8,26 @@
       d:DesignHeight="300" d:DesignWidth="300"
       Title="LogInPage">
 
-    <Grid>
-        
-    </Grid>
+    <Border Background="{StaticResource BackgroundDarkBrush}">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" TextBlock.TextAlignment="Center">
+                <Border 
+                    Background="{StaticResource BackgroundVeryDarkBrush}" 
+                    CornerRadius="10" 
+                    Padding="15 15 15 50"
+                    Width="400"
+                    Margin="50 50 50 50">
+                    <StackPanel>
+                        <TextBlock Text="Log In" 
+                                   FontSize="{StaticResource FontSizeLarge}" 
+                                   FontFamily="{StaticResource LatoRegular}"
+                                   Foreground="{StaticResource ForgroundLightBrush}"/>
+                        <TextBox/>
+                        <TextBox/>
+                        <Button Content="Submit"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </ScrollViewer>
+    </Border>
 </Page>

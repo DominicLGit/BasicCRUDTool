@@ -3,10 +3,10 @@
                     xmlns:local="clr-namespace:BasicCRUDTool">
 
     <Style TargetType="{x:Type TextBlock}" x:Key="HeaderText" BasedOn="{StaticResource BaseTextBLockStyle}">
-        <Setter Property="Foreground" Value="{StaticResource ForegroundMainBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource ForgroundVeryDarkBrush}"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="HorizontalAlignment" Value="Center"/>
-        <Setter Property="FontFamily" Value="{StaticResource LatoRegular}"/>
+        <Setter Property="FontFamily" Value="{StaticResource LatoBold}"/>
         <Setter Property="Margin" Value="0 5"/>
     </Style>
     
