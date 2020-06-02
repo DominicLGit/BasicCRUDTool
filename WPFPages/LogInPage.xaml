@@ -14,17 +14,18 @@
                 <Border 
                     Background="{StaticResource BackgroundVeryDarkBrush}" 
                     CornerRadius="10" 
-                    Padding="15 15 15 50"
+                    Padding="15 50 15 60"
                     Width="400"
                     Margin="50 50 50 50">
                     <StackPanel>
                         <TextBlock Text="Log In" 
                                    FontSize="{StaticResource FontSizeLarge}" 
-                                   FontFamily="{StaticResource LatoRegular}"
+                                   FontFamily="{StaticResource LatoBold}"
                                    Foreground="{StaticResource ForgroundLightBrush}"/>
-                        <TextBox/>
-                        <TextBox/>
-                        <Button Content="Submit"/>
+                        <TextBox Tag="Database"/>
+                        <TextBox Tag="Host"/>
+                        <PasswordBox Tag="Password" Margin="10 5 10 20"/>
+                        <Button Content="Next"/>
                     </StackPanel>
                 </Border>
             </StackPanel>

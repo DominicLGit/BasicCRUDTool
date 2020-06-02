@@ -25,4 +25,7 @@
 
     <Color x:Key="ButtonOrange">#ff8929</Color>
     <SolidColorBrush x:Key="ButtonOrangeBrush" Color="{StaticResource ButtonOrange}" />
+
+    <Color x:Key="ButtonBlue">#45a5d9</Color>
+    <SolidColorBrush x:Key="ButtonBlueBrush" Color="{StaticResource ButtonBlue}" />
 </ResourceDictionary>
