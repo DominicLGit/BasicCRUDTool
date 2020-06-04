@@ -11,6 +11,6 @@ namespace BasicCRUDTool
     {
         None = 0,
         SlideAndFadeInFromRight = 1,
-        SlideAndFadeInFromLeft = 2,
+        SlideAndFadeOutToLeft = 2,
     }
 }

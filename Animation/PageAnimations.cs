@@ -10,6 +10,12 @@ namespace BasicCRUDTool
 {
     public static class PageAnimations
     {
+        /// <summary>
+        /// Slides a page in from the right while fading in
+        /// </summary>
+        /// <param name="page"></param>
+        /// <param name="seconds"></param>
+        /// <returns></returns>
         public static async Task SlideAndFadeInFromRight(this Page page, float seconds)
         {
             //create storyboard
@@ -28,7 +34,13 @@ namespace BasicCRUDTool
             await Task.Delay((int)(seconds * 1000));
         }
 
-        public static async Task SlideAndFadeoutFromLeft(this Page page, float seconds)
+        /// <summary>
+        /// Slides a page out to the left while fading in
+        /// </summary>
+        /// <param name="page"></param>
+        /// <param name="seconds"></param>
+        /// <returns></returns>
+        public static async Task SlideAndFadeoutToLeft(this Page page, float seconds)
         {
             //create storyboard
             var sb = new Storyboard();
