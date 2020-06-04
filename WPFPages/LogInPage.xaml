@@ -22,9 +22,15 @@
                                    FontSize="{StaticResource FontSizeLarge}" 
                                    FontFamily="{StaticResource LatoBold}"
                                    Foreground="{StaticResource ForgroundLightBrush}"/>
-                        <TextBox Tag="Database"/>
-                        <TextBox Tag="Host"/>
-                        <PasswordBox Tag="Password" Margin="10 5 10 20"/>
+                        <TextBlock Text="Database"
+                                   Style="{StaticResource LableText}"/>
+                        <TextBox />
+                        <TextBlock Text="Host"
+                                   Style="{StaticResource LableText}"/>
+                        <TextBox />
+                        <TextBlock Text="Password"
+                                   Style="{StaticResource LableText}"/>
+                        <PasswordBox Margin="10 5 10 20"/>
                         <Button Content="Next"/>
                     </StackPanel>
                 </Border>

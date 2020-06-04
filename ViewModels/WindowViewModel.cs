@@ -22,7 +22,7 @@ namespace BasicCRUDTool
         #region Public Properties
         public ApplicationPage CurrentPage { get; set; } = ApplicationPage.Login;
         public double WindowMinimumWidth { get; set; } = 900;
-        public double WindowMinimumHeight { get; set; } = 600;
+        public double WindowMinimumHeight { get; set; } = 800;
         public double TitleHeight { get; set; } = 42; 
 
         public GridLength TitleHeightGridLength { get { return new GridLength(TitleHeight + ResizeBorder); } }

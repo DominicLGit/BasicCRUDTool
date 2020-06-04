@@ -10,6 +10,15 @@
         <Setter Property="Margin" Value="0 5"/>
     </Style>
 
+    <Style TargetType="{x:Type TextBlock}" x:Key="LableText" BasedOn="{StaticResource BaseTextBLockStyle}">
+        <Setter Property="Foreground" Value="{StaticResource ForgroundLightBrush}"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="FontFamily" Value="{StaticResource LatoBold}"/>
+        <Setter Property="FontSize" Value="{StaticResource FontSizeRegular}"/>
+        <Setter Property="Margin" Value="10 5"/>
+    </Style>
+
     <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource BaseStyle}">
         <Setter Property="FontSize" Value="{StaticResource FontSizeLarge}"/>
         <Setter Property="FontFamily" Value="{StaticResource LatoBold}"/>
@@ -82,22 +91,21 @@
         <Setter Property="Background" Value="{StaticResource BackgroundVeryDarkBrush}"/>
         <Setter Property="Foreground" Value="{StaticResource ForegroundMainBrush}"/>
 
-        <Setter Property="local:PasswordBoxProperties.MonitorPassword" Value="True"/>  
+
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type PasswordBox}">
+
                     <Grid>
 
                         <Border x:Name="border" 
-                                Background="{TemplateBinding Background}"
-                                BorderThickness="{TemplateBinding BorderThickness}" 
                                 BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                Background="{TemplateBinding Background}"
                                 SnapsToDevicePixels="True">
-                            <ScrollViewer x:Name="PART_ContentHost" 
-                                          Focusable="false" 
-                                          HorizontalScrollBarVisibility="Hidden" 
-                                          VerticalScrollBarVisibility="Hidden"/>
+                            <ScrollViewer x:Name="PART_ContentHost" Focusable="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
                         </Border>
+
                         <TextBlock IsHitTestVisible="False"
                                    Text="{TemplateBinding Tag}"
                                    x:Name="placeholder"
@@ -105,29 +113,22 @@
                                    Padding="{TemplateBinding Padding}"
                                    VerticalAlignment="Center"
                                    HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
-                                   Foreground="{StaticResource BackgroundLightBrush}">
-                            <TextBlock.Style>
-                                <Style TargetType="{x:Type TextBlock}">
-                                    <Setter Property="Visibility" Value="Collapsed"/>
-                                    <Style.Triggers>
-                                        <DataTrigger Binding="{Binding (local:PasswordBoxProperties.HasText), RelativeSource={RelativeSource TemplatedParent}}" Value="False">
-                                            <Setter Property="Visibility" Value="Visible"/>
-                                        </DataTrigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </TextBlock.Style>
+                                   Foreground="{StaticResource ForgroundVeryDarkBrush}"
+                                   >
                         </TextBlock>
-                    </Grid>  
+
+                    </Grid>
+
                     <ControlTemplate.Triggers>
-                        <!--<Trigger Property="IsEnabled" Value="false">
+                        <Trigger Property="IsEnabled" Value="False">
                             <Setter Property="Opacity" TargetName="border" Value="0.56"/>
                         </Trigger>
-                        <Trigger Property="IsMouseOver" Value="true">
-                            <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource TextBox.MouseOver.Border}"/>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="BorderBrush" TargetName="border" Value="#FF7EB4EA"/>
                         </Trigger>
-                        <Trigger Property="IsKeyboardFocused" Value="true">
-                            <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource TextBox.Focus.Border}"/>
-                        </Trigger>-->
+                        <Trigger Property="IsKeyboardFocused" Value="True">
+                            <Setter Property="BorderBrush" TargetName="border" Value="#FF569DE5"/>
+                        </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
