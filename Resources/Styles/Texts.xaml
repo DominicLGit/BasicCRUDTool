@@ -82,7 +82,7 @@
         <Setter Property="Background" Value="{StaticResource BackgroundVeryDarkBrush}"/>
         <Setter Property="Foreground" Value="{StaticResource ForegroundMainBrush}"/>
 
-
+        <Setter Property="local:PasswordBoxProperties.MonitorPassword" Value="True"/>  
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type PasswordBox}">
@@ -110,14 +110,14 @@
                                 <Style TargetType="{x:Type TextBlock}">
                                     <Setter Property="Visibility" Value="Collapsed"/>
                                     <Style.Triggers>
-                                        <DataTrigger Binding="{Binding Text, RelativeSource={RelativeSource TemplatedParent}}" Value="">
+                                        <DataTrigger Binding="{Binding (local:PasswordBoxProperties.HasText), RelativeSource={RelativeSource TemplatedParent}}" Value="False">
                                             <Setter Property="Visibility" Value="Visible"/>
                                         </DataTrigger>
                                     </Style.Triggers>
                                 </Style>
                             </TextBlock.Style>
                         </TextBlock>
-                    </Grid>
+                    </Grid>  
                     <ControlTemplate.Triggers>
                         <!--<Trigger Property="IsEnabled" Value="false">
                             <Setter Property="Opacity" TargetName="border" Value="0.56"/>
