@@ -3,14 +3,14 @@ using System.Windows.Input;
 
 namespace BasicCRUDTool
 {
-    class RelayCommand : ICommand
+    class RelayParameterizedCommand : ICommand
     {
 
         public event EventHandler CanExecuteChanged = (sender, e) => { };
 
-        private Action mAction;
+        private Action<object> mAction;
 
-        public RelayCommand(Action action)
+        public RelayParameterizedCommand(Action<object> action)
         {
             this.mAction = action;
         }
@@ -24,7 +24,7 @@ namespace BasicCRUDTool
 
         public void Execute(object parameter)
         {
-            mAction();
+            mAction(parameter);
         }
     }
 } 

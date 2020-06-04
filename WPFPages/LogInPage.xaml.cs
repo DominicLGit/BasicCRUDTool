@@ -11,12 +11,12 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace BasicCRUDTool.WPFPages
+namespace BasicCRUDTool
 {
     /// <summary>
     /// Interaction logic for LogInPage.xaml
     /// </summary>
-    public partial class LogInPage : BasePage
+    public partial class LogInPage : BasePage<LogInViewModel>
     {
         public LogInPage()
         {

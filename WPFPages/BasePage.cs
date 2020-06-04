@@ -11,7 +11,7 @@ namespace BasicCRUDTool
     /// A base page for all apges to gain base functionality
     /// </summary>
     public class BasePage<VM> : Page
-        where VM : BaseViewModel
+        where VM : BaseViewModel, new()
     {
         /// <summary>
         /// The View Model associated with this page
@@ -55,7 +55,8 @@ namespace BasicCRUDTool
            //Listen for page loading     
             this.Loaded += BasePage_Loaded;
 
-            this.DataContext = mViewModel;
+            //create default view model
+            this.ViewModel = new VM();
         }
         /// <summary>
         /// ONce the page is loaded perform required animations
