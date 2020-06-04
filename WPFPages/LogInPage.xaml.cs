@@ -16,7 +16,7 @@ namespace BasicCRUDTool.WPFPages
     /// <summary>
     /// Interaction logic for LogInPage.xaml
     /// </summary>
-    public partial class LogInPage : Page
+    public partial class LogInPage : BasePage
     {
         public LogInPage()
         {
